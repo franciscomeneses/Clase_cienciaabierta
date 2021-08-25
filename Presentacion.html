@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Clase de ciencia abierta: Datos abiertos</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="xaringan_custom/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: inverse, bottom, right
+
+
+
+
+
+
+
+
+&lt;!---
+About macros.js: permite escalar las imágenes como [:scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+.pull-left[&lt;images/Conocimiento cívico.png&gt;] 
+.pull-right[&lt;images/Conocimiento cívico_graf.png&gt;]
+
+---&gt;
+
+# __Ciencia Abierta en ciencias sociales__
+# Almacenamiento de datos:
+## *Razones, protocolos y experiencias*
+&lt;br&gt;
+&lt;hr&gt;
+
+
+### Francisco Meneses Rivas, *Universidad de Chile*
+
+&lt;br&gt;
+
+.small[Profesor de cátedra: Juan Carlos Castillo]
+
+---
+
+layout: true
+class: animated, fadeIn
+
+---
+class: inverse, middle, center, slideInRight
+
+# ¿Qué son datos abiertos?
+---
+## ¿A qué nos referimos con datos abiertos?
+
+* Existen distintas divisiones para señalar las etapas. Todas aluden a los datos 
+
+.center[![70%](images/etapasCienciaAbiertatodas.png)]
+ 
+
+---
+
+## ¿A qué nos referimos con datos abiertos?
+ 
+ 
+.pull-left[
+
+* Dejar al libre acceso. 
+ 
+* Facilitar el uso a terceros. 
+ 
+   *    Buenos ejemplos 
+   
+        *   [Dataverse COES](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/0KIRBJ) /  [Datos encuesta CEP](https://www.cepchile.cl/encuestaCEP) / [Datos Uchile](https://datos.uchile.cl/)]
+
+.pull-right[
+
+![](images/malejemplo.png)        
+]
+
+ 
+???
+
+ Ejemplos de las dificultades para conseguir datos
+
+
+ Esto implica formatos utilizables
+
+---
+# Intentar conseguir datos actualmente en ciencias sociales...
+
+![](https://64.media.tumblr.com/ca0bf3ee0027fed5a2031ac3144a9a37/tumblr_nduvdezM3c1tmsiowo1_500.gifv)
+
+---
+class: inverse, middle, center, slideInRight
+
+# ¿Por qué deberíamos abrir los datos?
+---
+
+## Razones para compartir "nuestros" datos
+ 
+* Democratizar el conocimiento
+    * Si se financia públicamente debe ser de acceso público
+    * Alto costo de producción
+    
+* Logra una ciencia de mejor calidad
+    * Permite el escrutinio público, es la piedra basal de la reproducibilidad:  El caso de Newman y Solt
+    * Fomenta la cooperación entre investigadores y con ello la innovación (ej. mi tesis)
+    
+* Permite estudios históricos, ya que resguarda información para futuras generaciones
+    * "Cambios en las posiciones políticas en los últimos 200 años"
+    
+* Incentivos personales: Visibilidad e impacto Piwowar and Vision (2013) 
+    
+---
+## Crear datos, sin curatoría ni publicación
+
+![](https://c.tenor.com/Li-6Ttfezg8AAAAC/money-burn.gif)
+
+---
+class: inverse, middle, center, slideInRight
+
+# ¿Cuáles son los estándares para compartir mis datos? 
+---
+
+### Algunos estándares promovidos internacionalmente
+
+En general, la idea es estandarizar los criterios para la apertura de datos, con el objetivo de que sea más fácil que cualquiera trabaje con ellos.
+  
+  * FAIR (Encontrables, Accesibles, Interoperables, Reutilizables)
+  * Acceso abierto ICSU
+  * Planes de manejo de datos (DMP) de la comisión europea.
+  * OAIS Managament Research Data
+
+---
+
+# Principios FAIR
+
+El objetivo es que sean fáciles de utilizar por investigadores y mediante inteligencia artificial.
+
+.pull-left[
+
+* Encontrables: Identificador, Metadatos, Motor de búsqueda
+
+* Accesibles: Direcciones web accesibles (http)
+
+* Interoperables: Variedad de Software (No-Propietario, Ñ) y tesauros (eric)
+
+* Reutilizables: Amplios metadatos, licencia, datos ordenados
+
+]
+.pull-right[
+
+![](https://franciscomeneses.github.io/CADIS/images/FAIR_data_principles2.jpg)        
+]
+
+---
+# Datos ordenados
+
+El objetivo de tidyr es ayudarte a crear datos ordenados. Los datos ordenados son datos donde: 
+
+*	Cada columna es una variable.
+
+*	Cada fila es una observación.
+
+*	Cada celda es un valor único.
+
+---
+
+# Ejemplo base desordenada
+
+Tiene 4 casos por hoja, la variable se indica en como valor de la columna F11 (SENTIR, IDENTIFICAR, PROPONER). De la fila 3 a la 6 en la primera columna están los sentimientos de cada encuestado sobre un tema. Desde el 7 están los sentimientos de la mesa en general (Discusión entre los cuatro)
+
+¿Cómo debería ser esta base en formato ordenado?
+
+![](images/malejemplodesordenado.png)
+
+---
+
+class: inverse, middle, center, slideInRight
+
+# Muchas gracias por su atención!
+---
+
+.pull-left[
+
+### Sobre almacenamiento te datos
+
+[Como publicar datos, LISA](https://lisa-coes.netlify.app/02componentes/)
+
+[Información sobre Datos abiertos](https://franciscomeneses.github.io/CADIS/index.html)
+
+###Ejemplos de repositorios de datos
+
+[Datos de investigación UdeChile](https://datos.uchile.cl/) 
+
+[Datos COES en Dataverse](https://dataverse.harvard.edu/dataverse/coes_data_repository) 
+
+[Datos CEP](https://www.cepchile.cl/encuestaCEP)
+
+]
+
+
+###Algunas herramientas 
+
+[tidyr para ordenar datos en R](https://tidyr.tidyverse.org/index.html )
+
+[tidyr y tidyverse](https://brianward1428.medium.com/introduction-to-tidyverse-7b3dbf2337d5)
+
+[Libros de codigo con sjPlot::view_df()](http://www.strengejacke.de/sjPlot/reference/view_df.html#examples)
+
+[De PDF a Excel](https://www.ilovepdf.com/es/pdf_a_excel) 
+[Tesauro ERIC](https://eric.ed.gov/ tesauro) 
+
+[Datos cualitativos abiertos](https://data.qdr.syr.edu/)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
