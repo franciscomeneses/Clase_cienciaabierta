@@ -1,3 +1,3 @@
-# Clase_cienciaabierta
+# Datos abiertos en ciencias sociales
 
-https://franciscomeneses.github.io/Clase_cienciaabierta/Presentacion.html
+[Presentación]https://franciscomeneses.github.io/Clase_cienciaabierta/Presentacion.html
